@@ -4,75 +4,75 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color tokens to match DWIVEDI TEA design brief with emerald green theme */
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.35 0.01 240);
-  --card: oklch(0.97 0.005 120);
-  --card-foreground: oklch(0.25 0.08 155);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.35 0.01 240);
-  --primary: oklch(0.45 0.15 155);
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.55 0.12 155);
-  --secondary-foreground: oklch(1 0 0);
-  --muted: oklch(0.97 0.005 120);
-  --muted-foreground: oklch(0.35 0.01 240);
-  --accent: oklch(0.55 0.12 155);
-  --accent-foreground: oklch(1 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(1 0 0);
-  --border: oklch(0.88 0.01 120);
-  --input: oklch(0.97 0.005 120);
-  --ring: oklch(0.45 0.15 155 / 0.5);
-  --chart-1: oklch(0.45 0.15 155);
-  --chart-2: oklch(0.55 0.12 155);
-  --chart-3: oklch(0.35 0.01 240);
-  --chart-4: oklch(0.577 0.245 27.325);
-  --chart-5: oklch(0.45 0.12 45);
+  /* Updated color tokens to match DWIVEDI TEA vintage logo aesthetic with deep browns, warm oranges, and cream colors */
+  --background: #ffffff; /* Cream */
+  --foreground: #4a2c2a; /* Deep Brown */
+  --card: #f9fafb; /* Soft White */
+  --card-foreground: #4a2c2a; /* Deep Brown */
+  --popover: #ffffff; /* Cream */
+  --popover-foreground: #4a2c2a; /* Deep Brown */
+  --primary: #4a2c2a; /* Deep Brown */
+  --primary-foreground: #ffffff; /* Cream */
+  --secondary: #d2691e; /* Warm Orange */
+  --secondary-foreground: #ffffff; /* Cream */
+  --muted: #bfae9d; /* Warm Beige */
+  --muted-foreground: #4a2c2a; /* Deep Brown */
+  --accent: #d2691e; /* Warm Orange */
+  --accent-foreground: #ffffff; /* Cream */
+  --destructive: #c53030; /* Red for alerts */
+  --destructive-foreground: #ffffff; /* White for contrast */
+  --border: #bfae9d; /* Warm Beige */
+  --input: #ffffff; /* Cream */
+  --ring: #d2691e; /* Warm Orange */
+  --chart-1: #4a2c2a; /* Deep Brown */
+  --chart-2: #d2691e; /* Warm Orange */
+  --chart-3: #bfae9d; /* Warm Beige */
+  --chart-4: #ffffff; /* Cream */
+  --chart-5: #f9fafb; /* Soft White */
   --radius: 0.5rem;
-  --sidebar: oklch(0.97 0.005 120);
-  --sidebar-foreground: oklch(0.35 0.01 240);
-  --sidebar-primary: oklch(0.45 0.15 155);
-  --sidebar-primary-foreground: oklch(1 0 0);
-  --sidebar-accent: oklch(0.55 0.12 155);
-  --sidebar-accent-foreground: oklch(1 0 0);
-  --sidebar-border: oklch(0.88 0.01 120);
-  --sidebar-ring: oklch(0.45 0.15 155 / 0.5);
+  --sidebar: #f9fafb; /* Soft White */
+  --sidebar-foreground: #4a2c2a; /* Deep Brown */
+  --sidebar-primary: #d2691e; /* Warm Orange */
+  --sidebar-primary-foreground: #ffffff; /* Cream */
+  --sidebar-accent: #bfae9d; /* Warm Beige */
+  --sidebar-accent-foreground: #4a2c2a; /* Deep Brown */
+  --sidebar-border: #bfae9d; /* Warm Beige */
+  --sidebar-ring: #d2691e; /* Warm Orange */
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.55 0.12 155);
-  --primary-foreground: oklch(0.145 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --background: #2a1a18; /* Dark Brown */
+  --foreground: #f9fafb; /* Soft White */
+  --card: #3a2622; /* Darker Brown */
+  --card-foreground: #f9fafb; /* Soft White */
+  --popover: #2a1a18; /* Dark Brown */
+  --popover-foreground: #f9fafb; /* Soft White */
+  --primary: #d2691e; /* Warm Orange */
+  --primary-foreground: #2a1a18; /* Dark Brown */
+  --secondary: #4a2c2a; /* Deep Brown */
+  --secondary-foreground: #f9fafb; /* Soft White */
+  --muted: #3a2622; /* Darker Brown */
+  --muted-foreground: #bfae9d; /* Warm Beige */
+  --accent: #d2691e; /* Warm Orange */
+  --accent-foreground: #2a1a18; /* Dark Brown */
+  --destructive: #dc2626; /* Red for alerts */
+  --destructive-foreground: #f9fafb; /* Soft White */
+  --border: #3a2622; /* Darker Brown */
+  --input: #3a2622; /* Darker Brown */
+  --ring: #d2691e; /* Warm Orange */
+  --chart-1: #d2691e; /* Warm Orange */
+  --chart-2: #bfae9d; /* Warm Beige */
+  --chart-3: #4a2c2a; /* Deep Brown */
+  --chart-4: #f9fafb; /* Soft White */
+  --chart-5: #3a2622; /* Darker Brown */
+  --sidebar: #3a2622; /* Darker Brown */
+  --sidebar-foreground: #f9fafb; /* Soft White */
+  --sidebar-primary: #d2691e; /* Warm Orange */
+  --sidebar-primary-foreground: #2a1a18; /* Dark Brown */
+  --sidebar-accent: #4a2c2a; /* Deep Brown */
+  --sidebar-accent-foreground: #f9fafb; /* Soft White */
+  --sidebar-border: #4a2c2a; /* Deep Brown */
+  --sidebar-ring: #d2691e; /* Warm Orange */
 }
 
 @theme inline {

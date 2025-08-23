@@ -11,26 +11,29 @@ export default function DwivediTeaPage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-50 to-green-100">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 via-amber-50 to-orange-100">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
+          className="absolute inset-0 bg-cover bg-center opacity-30"
           style={{
             backgroundImage: `url('/assam-tea-gardens.png')`,
           }}
         />
         <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
-          <div className="flex items-center justify-center mb-6">
-            <Leaf className="h-12 w-12 text-primary mr-4" />
-            <h1 className="text-4xl md:text-6xl font-serif font-bold text-foreground tracking-wide">DWIVEDI TEA</h1>
+          <div className="flex items-center justify-center mb-8">
+            <img src="/dwivedi-tea-logo.png" alt="DWIVEDI TEA Logo" className="h-24 w-24 md:h-32 md:w-32 mr-6" />
+            <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary tracking-wider">DWIVEDI TEA</h1>
           </div>
-          <h2 className="text-2xl md:text-4xl font-serif font-semibold text-primary mb-6">
+          <h2 className="text-2xl md:text-4xl font-serif font-semibold text-secondary mb-6">
             🌱 Fresh, Premium Teas — From Assam to Your Home
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto font-serif leading-relaxed">
             From homely blends to festive teas, experience authentic, single-origin freshness — crafted for every tea
             lover and bulk buyer in India.
           </p>
-          <Button size="lg" className="text-lg px-8 py-6 font-serif">
+          <Button
+            size="lg"
+            className="text-lg px-8 py-6 font-serif bg-secondary hover:bg-secondary/90 text-secondary-foreground"
+          >
             👉 Shop Teas
           </Button>
         </div>
@@ -44,52 +47,56 @@ export default function DwivediTeaPage() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Swad Tea */}
-            <Card className="group hover:shadow-lg transition-shadow duration-300">
+            <Card className="group hover:shadow-xl transition-all duration-300 border-border hover:border-secondary/30">
               <div className="relative overflow-hidden rounded-t-lg">
                 <img
                   src="/swad-tea-jars.jpg"
                   alt="Swad - Ghar Ki Chai"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">🍵 Everyday Comfort</Badge>
+                <Badge className="absolute top-4 left-4 bg-secondary text-secondary-foreground">
+                  🍵 Everyday Comfort
+                </Badge>
               </div>
               <CardHeader>
-                <CardTitle className="font-sans text-xl">Swad – Ghar Ki Chai</CardTitle>
-                <CardDescription className="font-serif text-base leading-relaxed">
+                <CardTitle className="font-sans text-xl text-primary">Swad – Ghar Ki Chai</CardTitle>
+                <CardDescription className="font-serif text-base leading-relaxed text-muted-foreground">
                   Your everyday comfort tea. Strong, refreshing, and familiar — the perfect cup for family mornings and
                   daily rituals.
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button className="w-full font-serif">👉 Buy Swad</Button>
+                <Button className="w-full font-serif bg-secondary hover:bg-secondary/90 text-secondary-foreground">
+                  👉 Buy Swad
+                </Button>
               </CardContent>
             </Card>
 
             {/* Utsav Tea */}
-            <Card className="group hover:shadow-lg transition-shadow duration-300">
+            <Card className="group hover:shadow-xl transition-all duration-300 border-border hover:border-secondary/30">
               <div className="relative overflow-hidden rounded-t-lg">
                 <img
                   src="/utsav-tea-jars.jpg"
                   alt="Utsav - Festival Tea"
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <Badge className="absolute top-4 left-4 bg-secondary text-secondary-foreground">
-                  🎉 Festival Special
-                </Badge>
+                <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">🎉 Festival Special</Badge>
               </div>
               <CardHeader>
-                <CardTitle className="font-sans text-xl">Utsav – When Tea Becomes a Festival</CardTitle>
-                <CardDescription className="font-serif text-base leading-relaxed">
+                <CardTitle className="font-sans text-xl text-primary">Utsav – When Tea Becomes a Festival</CardTitle>
+                <CardDescription className="font-serif text-base leading-relaxed text-muted-foreground">
                   A lively, aromatic blend made for celebrations. Ideal for gatherings, gifting, and making memories.
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button className="w-full font-serif">👉 Buy Utsav</Button>
+                <Button className="w-full font-serif bg-secondary hover:bg-secondary/90 text-secondary-foreground">
+                  👉 Buy Utsav
+                </Button>
               </CardContent>
             </Card>
 
             {/* Premium CTC */}
-            <Card className="group hover:shadow-lg transition-shadow duration-300">
+            <Card className="group hover:shadow-xl transition-all duration-300 border-border hover:border-secondary/30">
               <div className="relative overflow-hidden rounded-t-lg">
                 <img
                   src="/premium-ctc-tea.jpg"
@@ -99,13 +106,15 @@ export default function DwivediTeaPage() {
                 <Badge className="absolute top-4 left-4 bg-accent text-accent-foreground">🏪 Bulk Choice</Badge>
               </div>
               <CardHeader>
-                <CardTitle className="font-sans text-xl">Premium CTC – Bulk Buyers' Choice</CardTitle>
-                <CardDescription className="font-serif text-base leading-relaxed">
+                <CardTitle className="font-sans text-xl text-primary">Premium CTC – Bulk Buyers' Choice</CardTitle>
+                <CardDescription className="font-serif text-base leading-relaxed text-muted-foreground">
                   Robust, consistent, and value-packed. Perfect for cafés, hotels, corporates, and wholesale partners.
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button className="w-full font-serif">👉 Order Bulk Tea</Button>
+                <Button className="w-full font-serif bg-secondary hover:bg-secondary/90 text-secondary-foreground">
+                  👉 Order Bulk Tea
+                </Button>
               </CardContent>
             </Card>
           </div>
@@ -113,7 +122,7 @@ export default function DwivediTeaPage() {
       </section>
 
       {/* Why Choose Section */}
-      <section className="py-20 px-6 bg-muted">
+      <section className="py-20 px-6 bg-muted/50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-sans font-bold mb-6 text-foreground">Why Choose DWIVEDI TEA?</h2>
@@ -124,40 +133,40 @@ export default function DwivediTeaPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center group">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                <Leaf className="h-8 w-8 text-primary" />
+              <div className="bg-secondary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary/20 transition-colors">
+                <Leaf className="h-8 w-8 text-secondary" />
               </div>
-              <h3 className="font-sans font-semibold text-lg mb-2">🌱 From Assam & Darjeeling Gardens</h3>
+              <h3 className="font-sans font-semibold text-lg mb-2 text-primary">🌱 From Assam & Darjeeling Gardens</h3>
               <p className="font-serif text-muted-foreground">Authentic & fresh.</p>
             </div>
 
             <div className="text-center group">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                <Users className="h-8 w-8 text-primary" />
+              <div className="bg-secondary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary/20 transition-colors">
+                <Users className="h-8 w-8 text-secondary" />
               </div>
-              <h3 className="font-sans font-semibold text-lg mb-2">🍵 Made for All Tea Lovers</h3>
+              <h3 className="font-sans font-semibold text-lg mb-2 text-primary">🍵 Made for All Tea Lovers</h3>
               <p className="font-serif text-muted-foreground">From homely brews to bulk buyers.</p>
             </div>
 
             <div className="text-center group">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                <Heart className="h-8 w-8 text-primary" />
+              <div className="bg-secondary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary/20 transition-colors">
+                <Heart className="h-8 w-8 text-secondary" />
               </div>
-              <h3 className="font-sans font-semibold text-lg mb-2">🤝 Community First</h3>
+              <h3 className="font-sans font-semibold text-lg mb-2 text-primary">🤝 Community First</h3>
               <p className="font-serif text-muted-foreground">Supporting small farmers, fair wages & sustainability.</p>
             </div>
 
             <div className="text-center group">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                <Package className="h-8 w-8 text-primary" />
+              <div className="bg-secondary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary/20 transition-colors">
+                <Package className="h-8 w-8 text-secondary" />
               </div>
-              <h3 className="font-sans font-semibold text-lg mb-2">📦 Eco-Friendly Packaging</h3>
+              <h3 className="font-sans font-semibold text-lg mb-2 text-primary">📦 Eco-Friendly Packaging</h3>
               <p className="font-serif text-muted-foreground">Fresh tea, minimal footprint.</p>
             </div>
           </div>
 
           <div className="text-center mt-12">
-            <Button size="lg" className="font-serif">
+            <Button size="lg" className="font-serif bg-secondary hover:bg-secondary/90 text-secondary-foreground">
               👉 Shop Now
             </Button>
           </div>
@@ -185,17 +194,17 @@ export default function DwivediTeaPage() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 px-6 bg-muted">
+      <section className="py-20 px-6 bg-muted/50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-sans font-bold text-center mb-4 text-foreground">
             ✨ Loved by Tea Drinkers & Partners ✨
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mt-12">
-            <Card>
+            <Card className="border-border hover:border-secondary/30 transition-colors">
               <CardContent className="p-6">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                    <Star key={i} className="h-5 w-5 fill-secondary text-secondary" />
                   ))}
                 </div>
                 <p className="font-serif text-card-foreground mb-4 leading-relaxed">
@@ -205,11 +214,11 @@ export default function DwivediTeaPage() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-border hover:border-secondary/30 transition-colors">
               <CardContent className="p-6">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                    <Star key={i} className="h-5 w-5 fill-secondary text-secondary" />
                   ))}
                 </div>
                 <p className="font-serif text-card-foreground mb-4 leading-relaxed">
@@ -219,11 +228,11 @@ export default function DwivediTeaPage() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border-border hover:border-secondary/30 transition-colors">
               <CardContent className="p-6">
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                    <Star key={i} className="h-5 w-5 fill-secondary text-secondary" />
                   ))}
                 </div>
                 <p className="font-serif text-card-foreground mb-4 leading-relaxed">
@@ -234,7 +243,7 @@ export default function DwivediTeaPage() {
             </Card>
           </div>
           <div className="text-center mt-12">
-            <Button size="lg" className="font-serif">
+            <Button size="lg" className="font-serif bg-secondary hover:bg-secondary/90 text-secondary-foreground">
               👉 Join the Community
             </Button>
           </div>
@@ -270,7 +279,7 @@ export default function DwivediTeaPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 px-6 bg-muted">
+      <section className="py-20 px-6 bg-muted/50">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-sans font-bold mb-4 text-foreground">
@@ -278,37 +287,37 @@ export default function DwivediTeaPage() {
             </h2>
           </div>
 
-          <Card>
+          <Card className="border-border">
             <CardContent className="p-8">
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="name" className="font-serif">
+                    <Label htmlFor="name" className="font-serif text-primary">
                       Name*
                     </Label>
-                    <Input id="name" required className="mt-1" />
+                    <Input id="name" required className="mt-1 border-border focus:ring-secondary" />
                   </div>
                   <div>
-                    <Label htmlFor="email" className="font-serif">
+                    <Label htmlFor="email" className="font-serif text-primary">
                       Email*
                     </Label>
-                    <Input id="email" type="email" required className="mt-1" />
+                    <Input id="email" type="email" required className="mt-1 border-border focus:ring-secondary" />
                   </div>
                 </div>
 
                 <div>
-                  <Label htmlFor="phone" className="font-serif">
+                  <Label htmlFor="phone" className="font-serif text-primary">
                     Phone (optional)
                   </Label>
-                  <Input id="phone" type="tel" className="mt-1" />
+                  <Input id="phone" type="tel" className="mt-1 border-border focus:ring-secondary" />
                 </div>
 
                 <div>
-                  <Label htmlFor="interest" className="font-serif">
+                  <Label htmlFor="interest" className="font-serif text-primary">
                     I'm Interested In:
                   </Label>
                   <Select>
-                    <SelectTrigger className="mt-1">
+                    <SelectTrigger className="mt-1 border-border focus:ring-secondary">
                       <SelectValue placeholder="Select your interest" />
                     </SelectTrigger>
                     <SelectContent>
@@ -322,18 +331,18 @@ export default function DwivediTeaPage() {
                 </div>
 
                 <div>
-                  <Label htmlFor="message" className="font-serif">
+                  <Label htmlFor="message" className="font-serif text-primary">
                     Message
                   </Label>
-                  <Textarea id="message" rows={4} className="mt-1" />
+                  <Textarea id="message" rows={4} className="mt-1 border-border focus:ring-secondary" />
                 </div>
 
                 <div>
-                  <Label htmlFor="source" className="font-serif">
+                  <Label htmlFor="source" className="font-serif text-primary">
                     How did you hear about us?
                   </Label>
                   <Select>
-                    <SelectTrigger className="mt-1">
+                    <SelectTrigger className="mt-1 border-border focus:ring-secondary">
                       <SelectValue placeholder="Select source" />
                     </SelectTrigger>
                     <SelectContent>
@@ -345,7 +354,11 @@ export default function DwivediTeaPage() {
                   </Select>
                 </div>
 
-                <Button type="submit" size="lg" className="w-full font-serif">
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full font-serif bg-secondary hover:bg-secondary/90 text-secondary-foreground"
+                >
                   👉 Send Enquiry
                 </Button>
               </form>
@@ -359,7 +372,7 @@ export default function DwivediTeaPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center mb-4">
-              <Leaf className="h-8 w-8 mr-3" />
+              <img src="/dwivedi-tea-logo.png" alt="DWIVEDI TEA Logo" className="h-12 w-12 mr-3 brightness-0 invert" />
               <h3 className="text-2xl font-serif font-bold tracking-wide">DWIVEDI TEA</h3>
             </div>
             <p className="font-serif text-primary-foreground/80">
@@ -370,8 +383,8 @@ export default function DwivediTeaPage() {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="flex items-center justify-center mb-2">
-                <MapPin className="h-5 w-5 mr-2" />
-                <span className="font-serif">Locations</span>
+                <MapPin className="h-5 w-5 mr-2 text-primary" />
+                <span className="font-serif text-primary">Locations</span>
               </div>
               <p className="font-serif text-sm text-primary-foreground/80">
                 📍 Assam | Darjeeling | Bangalore | Kolkata
@@ -380,16 +393,16 @@ export default function DwivediTeaPage() {
 
             <div>
               <div className="flex items-center justify-center mb-2">
-                <Mail className="h-5 w-5 mr-2" />
-                <span className="font-serif">Contact</span>
+                <Mail className="h-5 w-5 mr-2 text-primary" />
+                <span className="font-serif text-primary">Contact</span>
               </div>
               <p className="font-serif text-sm text-primary-foreground/80">📧 Email | 📞 Phone</p>
             </div>
 
             <div>
               <div className="flex items-center justify-center mb-2">
-                <MessageSquare className="h-5 w-5 mr-2" />
-                <span className="font-serif">Connect</span>
+                <MessageSquare className="h-5 w-5 mr-2 text-primary" />
+                <span className="font-serif text-primary">Connect</span>
               </div>
               <p className="font-serif text-sm text-primary-foreground/80">WhatsApp | Social Media</p>
             </div>
