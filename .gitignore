@@ -25,3 +25,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+/Users/aditya-home/Documents/dwivedi-tea/dwivedi-tea/package-lock.json
