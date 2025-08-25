@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -8,39 +10,54 @@ import { Badge } from "@/components/ui/badge"
 import { Leaf, Users, Package, Heart, Star, MapPin, Mail, MessageSquare } from "lucide-react"
 
 export default function DwivediTeaPage() {
+  const scrollToTeaCollection = () => {
+    const element = document.getElementById("tea-collection")
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 via-amber-50 to-orange-100">
+      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-30"
+          className="absolute inset-0 opacity-10"
           style={{
-            backgroundImage: `url('/assam-tea-gardens.png')`,
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fillRule='evenodd'%3E%3Cg fill='%23D2691E' fillOpacity='0.3'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3Ccircle cx='10' cy='10' r='1'/%3E%3Ccircle cx='50' cy='10' r='1'/%3E%3Ccircle cx='10' cy='50' r='1'/%3E%3Ccircle cx='50' cy='50' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }}
         />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-transparent"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
           <div className="flex items-center justify-center mb-8">
-            <img src="/dwivedi-tea-logo.png" alt="DWIVEDI TEA Logo" className="h-24 w-24 md:h-32 md:w-32 mr-6" />
-            <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary tracking-wider">DWIVEDI TEA</h1>
+            <img
+              src="/dwivedi-tea-logo.png"
+              alt="DWIVEDI TEA Logo"
+              className="h-40 w-40 md:h-48 md:w-48 drop-shadow-2xl"
+              style={{
+                filter: "drop-shadow(0 0 20px rgba(74, 44, 42, 0.4)) drop-shadow(0 0 40px rgba(74, 44, 42, 0.2))",
+              }}
+            />
           </div>
-          <h2 className="text-2xl md:text-4xl font-serif font-semibold text-secondary mb-6">
-            🌱 Fresh, Premium Teas — From Assam to Your Home
+          <h2 className="text-3xl md:text-5xl font-sans font-bold text-[#4A2C2A] mb-8 tracking-tight leading-tight drop-shadow-sm italic">
+            Fresh, Premium Teas — From Assam to Your Home
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto font-serif leading-relaxed">
+          <p className="text-xl md:text-2xl text-[#6B4423] mb-10 max-w-3xl mx-auto font-sans leading-snug font-medium drop-shadow-sm italic">
             From homely blends to festive teas, experience authentic, single-origin freshness — crafted for every tea
             lover and bulk buyer in India.
           </p>
           <Button
             size="lg"
-            className="text-lg px-8 py-6 font-serif bg-secondary hover:bg-secondary/90 text-secondary-foreground"
+            className="text-xl px-10 py-7 font-sans font-semibold bg-[#D2691E] hover:bg-[#B8541A] text-white border-0 shadow-xl"
+            onClick={scrollToTeaCollection}
           >
-            👉 Shop Teas
+            Shop Teas
           </Button>
         </div>
       </section>
 
       {/* Our Teas Section */}
-      <section className="py-20 px-6">
+      <section id="tea-collection" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-sans font-bold text-center mb-16 text-foreground">
             Our Premium Tea Collection
@@ -250,34 +267,6 @@ export default function DwivediTeaPage() {
         </div>
       </section>
 
-      {/* Tea Wisdom Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-sans font-bold mb-12 text-foreground">Tea Wisdom</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-8">
-                <h3 className="font-sans font-semibold text-xl mb-4">📘 Free Download</h3>
-                <p className="font-serif text-card-foreground leading-relaxed">
-                  "The Complete Guide to Brewing Perfect Tea"
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-8">
-                <h3 className="font-sans font-semibold text-xl mb-4">📝 Blog Teaser</h3>
-                <p className="font-serif text-card-foreground leading-relaxed">
-                  "Seasonal Tea Guide – What to Drink When"
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-          <Button variant="outline" size="lg" className="mt-8 font-serif bg-transparent">
-            👉 Explore More
-          </Button>
-        </div>
-      </section>
-
       {/* Contact Section */}
       <section className="py-20 px-6 bg-muted/50">
         <div className="max-w-2xl mx-auto">
@@ -372,8 +361,7 @@ export default function DwivediTeaPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center mb-4">
-              <img src="/dwivedi-tea-logo.png" alt="DWIVEDI TEA Logo" className="h-12 w-12 mr-3 brightness-0 invert" />
-              <h3 className="text-2xl font-serif font-bold tracking-wide">DWIVEDI TEA</h3>
+              <img src="/dwivedi-tea-logo.png" alt="DWIVEDI TEA Logo" className="h-16 w-16 brightness-0 invert" />
             </div>
             <p className="font-serif text-primary-foreground/80">
               🌱 © 2025 DWIVEDI TEA | Premium Assam & Darjeeling Teas
