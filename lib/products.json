@@ -1,0 +1,71 @@
+[
+  {
+    "id": "swad",
+    "name": "Swad – Ghar Ki Chai",
+    "description": "Your everyday comfort tea. Strong, refreshing, and familiar — the perfect cup for family mornings and daily rituals.",
+    "longDescription": "Swad represents the essence of home-style tea brewing. This carefully crafted blend combines the robust flavors of Assam tea leaves with traditional processing methods that have been passed down through generations. Perfect for starting your day or enjoying during evening conversations with family.",
+    "price": 180,
+    "originalPrice": 220,
+    "image": "/swad-tea-jars.jpg",
+    "category": "Black",
+    "rating": 4.8,
+    "reviews": 124,
+    "sizes": [
+      { "size": "50g", "price": 180, "servings": "25 cups" },
+      { "size": "100g", "price": 320, "servings": "50 cups" },
+      { "size": "250g", "price": 750, "servings": "125 cups" }
+    ],
+    "bestseller": true,
+    "tags": ["Everyday", "Strong", "Family", "Traditional"],
+    "ingredients": ["Assam Black Tea", "Natural Flavors"],
+    "brewingInstructions": "Use 1 tsp per cup, steep for 3-5 minutes in boiling water",
+    "origin": "Assam, India",
+    "caffeineLevel": "High"
+  },
+  {
+    "id": "utsav",
+    "name": "Utsav – When Tea Becomes a Festival",
+    "description": "A lively, aromatic blend made for celebrations. Ideal for gatherings, gifting, and making memories.",
+    "longDescription": "Utsav is our celebration tea, specially blended for festive occasions and special moments. This aromatic blend features premium tea leaves enhanced with traditional Indian spices, creating a rich and flavorful experience that brings people together.",
+    "price": 250,
+    "originalPrice": 300,
+    "image": "/utsav-tea-jars.jpg",
+    "category": "Masala",
+    "rating": 4.9,
+    "reviews": 89,
+    "sizes": [
+      { "size": "50g", "price": 250, "servings": "25 cups" },
+      { "size": "100g", "price": 450, "servings": "50 cups" },
+      { "size": "250g", "price": 1000, "servings": "125 cups" }
+    ],
+    "bestseller": true,
+    "tags": ["Festival", "Aromatic", "Gift", "Spiced"],
+    "ingredients": ["Assam Black Tea", "Cardamom", "Cinnamon", "Cloves", "Natural Spices"],
+    "brewingInstructions": "Use 1 tsp per cup, steep for 4-6 minutes, add milk and sugar to taste",
+    "origin": "Assam, India",
+    "caffeineLevel": "High"
+  },
+  {
+    "id": "premium-ctc",
+    "name": "Premium CTC – Bulk Buyers' Choice",
+    "description": "Robust, consistent, and value-packed. Perfect for cafés, hotels, corporates, and wholesale partners.",
+    "longDescription": "Our Premium CTC (Crush, Tear, Curl) tea is specially processed for commercial use while maintaining exceptional quality. This robust blend offers consistency in flavor and strength, making it ideal for businesses that serve tea regularly.",
+    "price": 450,
+    "originalPrice": 500,
+    "image": "/premium-ctc-tea.jpg",
+    "category": "Black",
+    "rating": 4.7,
+    "reviews": 67,
+    "sizes": [
+      { "size": "500g", "price": 450, "servings": "250 cups" },
+      { "size": "1kg", "price": 850, "servings": "500 cups" },
+      { "size": "2.5kg", "price": 2000, "servings": "1250 cups" }
+    ],
+    "bestseller": false,
+    "tags": ["Bulk", "Commercial", "Strong", "Value"],
+    "ingredients": ["Premium CTC Black Tea"],
+    "brewingInstructions": "Use 1 tsp per cup, steep for 3-4 minutes, excellent with milk",
+    "origin": "Assam, India",
+    "caffeineLevel": "High"
+  }
+]

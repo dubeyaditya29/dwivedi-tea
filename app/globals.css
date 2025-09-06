@@ -79,6 +79,8 @@
   --font-sans: var(--font-geist);
   --font-serif: var(--font-manrope);
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* Adding Playfair Display as decorative font for stylish headings */
+  --font-playfair: var(--font-playfair);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);

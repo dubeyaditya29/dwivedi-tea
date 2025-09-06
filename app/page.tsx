@@ -1,13 +1,14 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Badge } from "@/components/ui/badge"
 import { Leaf, Users, Package, Heart, Star, MapPin, Mail, MessageSquare } from "lucide-react"
+import Link from "next/link"
 
 export default function DwivediTeaPage() {
   const scrollToTeaCollection = () => {
@@ -17,7 +18,6 @@ export default function DwivediTeaPage() {
     }
   }
 
-  
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -40,101 +40,99 @@ export default function DwivediTeaPage() {
               }}
             />
           </div>
-          <h2 className="text-3xl md:text-5xl font-sans font-bold text-[#4A2C2A] mb-8 tracking-tight leading-tight drop-shadow-sm italic">
+          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-[#4A2C2A] mb-8 tracking-tight leading-tight drop-shadow-sm italic">
             Fresh, Premium Teas — From Assam to Your Home
           </h2>
           <p className="text-xl md:text-2xl text-[#6B4423] mb-10 max-w-3xl mx-auto font-sans leading-snug font-medium drop-shadow-sm italic">
             From homely blends to festive teas, experience authentic, single-origin freshness — crafted for every tea
             lover and bulk buyer in India.
           </p>
-          <Button
-            size="lg"
-            className="text-xl px-10 py-7 font-sans font-semibold bg-[#D2691E] hover:bg-[#B8541A] text-white border-0 shadow-xl"
-            onClick={scrollToTeaCollection}
-          >
-            Shop Teas
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              size="lg"
+              className="text-xl px-10 py-7 font-sans font-semibold bg-[#D2691E] hover:bg-[#B8541A] text-white border-0 shadow-xl"
+              onClick={scrollToTeaCollection}
+            >
+              Shop Teas
+            </Button>
+            <Link href="/products">
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-xl px-10 py-7 font-sans font-semibold border-[#4A2C2A] text-[#4A2C2A] hover:bg-[#4A2C2A] hover:text-white shadow-xl bg-transparent"
+              >
+                View All Products
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* Our Teas Section */}
       <section id="tea-collection" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-sans font-bold text-center mb-16 text-foreground">
+          <h2 className="text-3xl md:text-4xl font-playfair font-bold text-center mb-16 text-foreground">
             Our Premium Tea Collection
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Swad Tea */}
-            <Card className="group hover:shadow-xl transition-all duration-300 border-border hover:border-secondary/30">
-              <div className="relative overflow-hidden rounded-t-lg">
-                <img
-                  src="/swad-tea-jars.jpg"
-                  alt="Swad - Ghar Ki Chai"
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <Badge className="absolute top-4 left-4 bg-secondary text-secondary-foreground">
-                  🍵 Everyday Comfort
-                </Badge>
+
+          <div className="space-y-16">
+            {/* Swad Tea - Image Left, Text Right */}
+            <div className="flex flex-col lg:flex-row items-center gap-8">
+              <div className="lg:w-1/2">
+                <div className="relative overflow-hidden rounded-lg">
+                  <img src="/swad-tea-jars.jpg" alt="Swad - Ghar Ki Chai" className="w-full h-80 object-cover" />
+                  <Badge className="absolute top-4 left-4 bg-secondary text-secondary-foreground">
+                    🍵 Everyday Comfort
+                  </Badge>
+                </div>
               </div>
-              <CardHeader>
-                <CardTitle className="font-sans text-xl text-primary">Swad – Ghar Ki Chai</CardTitle>
-                <CardDescription className="font-serif text-base leading-relaxed text-muted-foreground">
+              <div className="lg:w-1/2 space-y-4">
+                <h3 className="font-playfair text-3xl font-bold text-primary">Swad – Ghar Ki Chai</h3>
+                <p className="font-serif text-lg leading-relaxed text-muted-foreground">
                   Your everyday comfort tea. Strong, refreshing, and familiar — the perfect cup for family mornings and
-                  daily rituals.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button className="w-full font-serif bg-secondary hover:bg-secondary/90 text-secondary-foreground">
-                  👉 Buy Swad
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Utsav Tea */}
-            <Card className="group hover:shadow-xl transition-all duration-300 border-border hover:border-secondary/30">
-              <div className="relative overflow-hidden rounded-t-lg">
-                <img
-                  src="/utsav-tea-jars.jpg"
-                  alt="Utsav - Festival Tea"
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">🎉 Festival Special</Badge>
+                  daily rituals. Made with the finest Assam tea leaves, this blend brings the authentic taste of home to
+                  every cup.
+                </p>
               </div>
-              <CardHeader>
-                <CardTitle className="font-sans text-xl text-primary">Utsav – When Tea Becomes a Festival</CardTitle>
-                <CardDescription className="font-serif text-base leading-relaxed text-muted-foreground">
+            </div>
+
+            {/* Utsav Tea - Text Left, Image Right */}
+            <div className="flex flex-col lg:flex-row-reverse items-center gap-8">
+              <div className="lg:w-1/2">
+                <div className="relative overflow-hidden rounded-lg">
+                  <img src="/utsav-tea-jars.jpg" alt="Utsav - Festival Tea" className="w-full h-80 object-cover" />
+                  <Badge className="absolute top-4 left-4 bg-primary text-primary-foreground">
+                    🎉 Festival Special
+                  </Badge>
+                </div>
+              </div>
+              <div className="lg:w-1/2 space-y-4">
+                <h3 className="font-playfair text-3xl font-bold text-primary">Utsav – When Tea Becomes a Festival</h3>
+                <p className="font-serif text-lg leading-relaxed text-muted-foreground">
                   A lively, aromatic blend made for celebrations. Ideal for gatherings, gifting, and making memories.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button className="w-full font-serif bg-secondary hover:bg-secondary/90 text-secondary-foreground">
-                  👉 Buy Utsav
-                </Button>
-              </CardContent>
-            </Card>
-
-            {/* Premium CTC */}
-            <Card className="group hover:shadow-xl transition-all duration-300 border-border hover:border-secondary/30">
-              <div className="relative overflow-hidden rounded-t-lg">
-                <img
-                  src="/premium-ctc-tea.jpg"
-                  alt="Premium CTC - Bulk Tea"
-                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <Badge className="absolute top-4 left-4 bg-accent text-accent-foreground">🏪 Bulk Choice</Badge>
+                  This festive blend combines traditional spices with premium tea leaves to create moments of joy in
+                  every sip.
+                </p>
               </div>
-              <CardHeader>
-                <CardTitle className="font-sans text-xl text-primary">Premium CTC – Bulk Buyers' Choice</CardTitle>
-                <CardDescription className="font-serif text-base leading-relaxed text-muted-foreground">
+            </div>
+
+            {/* Premium CTC - Image Left, Text Right */}
+            <div className="flex flex-col lg:flex-row items-center gap-8">
+              <div className="lg:w-1/2">
+                <div className="relative overflow-hidden rounded-lg">
+                  <img src="/premium-ctc-tea.jpg" alt="Premium CTC - Bulk Tea" className="w-full h-80 object-cover" />
+                  <Badge className="absolute top-4 left-4 bg-accent text-accent-foreground">🏪 Bulk Choice</Badge>
+                </div>
+              </div>
+              <div className="lg:w-1/2 space-y-4">
+                <h3 className="font-playfair text-3xl font-bold text-primary">Premium CTC – Bulk Buyers' Choice</h3>
+                <p className="font-serif text-lg leading-relaxed text-muted-foreground">
                   Robust, consistent, and value-packed. Perfect for cafés, hotels, corporates, and wholesale partners.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button className="w-full font-serif bg-secondary hover:bg-secondary/90 text-secondary-foreground">
-                  👉 Order Bulk Tea
-                </Button>
-              </CardContent>
-            </Card>
+                  Our premium CTC blend ensures consistent quality and taste in every batch, making it the preferred
+                  choice for businesses.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
